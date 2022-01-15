@@ -982,7 +982,7 @@ input[id*='-8-']:checked ~ div label[for*='-8-'] {
 }
 
 input[id*='-0-']:checked ~ .board .tile-0 div,
-input[id*='-1-']:checked ~ .board #tile-1 div,
+input[id*='-1-']:checked ~ .board .tile-1 div,
 input[id*='-2-']:checked ~ .board #tile-2 div,
 input[id*='-3-']:checked ~ .board #tile-3 div,
 input[id*='-4-']:checked ~ .board #tile-4 div,
@@ -994,7 +994,7 @@ input[id*='-8-']:checked ~ .board #tile-8 div {
 }
 
 input[id*='-0-x']:checked ~ .board .tile-0 div::before,
-input[id*='-1-x']:checked ~ .board #tile-1 div::before,
+input[id*='-1-x']:checked ~ .board .tile-1 div::before,
 input[id*='-2-x']:checked ~ .board #tile-2 div::before,
 input[id*='-3-x']:checked ~ .board #tile-3 div::before,
 input[id*='-4-x']:checked ~ .board #tile-4 div::before,
@@ -1008,7 +1008,7 @@ input[id*='-8-x']:checked ~ .board #tile-8 div::before {
 }
 
 input[id*='-0-o']:checked ~ .board .tile-0 div::before,
-input[id*='-1-o']:checked ~ .board #tile-1 div::before,
+input[id*='-1-o']:checked ~ .board .tile-1 div::before,
 input[id*='-2-o']:checked ~ .board #tile-2 div::before,
 input[id*='-3-o']:checked ~ .board #tile-3 div::before,
 input[id*='-4-o']:checked ~ .board #tile-4 div::before,
@@ -1058,7 +1058,7 @@ input[id*='-8-o']:checked ~ .board #tile-8 div::before {
 .tile-0 div {
   border-radius: 10% 0 0 0;
 }
-#tile-1 {
+.tile-1 {
   grid-column: 2;
   grid-row: 1;
 }
