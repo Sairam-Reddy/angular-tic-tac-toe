@@ -983,25 +983,25 @@ input[id*='-8-']:checked ~ div label[for*='-8-'] {
 
 input[id*='-0-']:checked ~ .board .tile-0 div,
 input[id*='-1-']:checked ~ .board .tile-1 div,
-input[id*='-2-']:checked ~ .board #tile-2 div,
-input[id*='-3-']:checked ~ .board #tile-3 div,
-input[id*='-4-']:checked ~ .board #tile-4 div,
-input[id*='-5-']:checked ~ .board #tile-5 div,
-input[id*='-6-']:checked ~ .board #tile-6 div,
-input[id*='-7-']:checked ~ .board #tile-7 div,
-input[id*='-8-']:checked ~ .board #tile-8 div {
+input[id*='-2-']:checked ~ .board .tile-2 div,
+input[id*='-3-']:checked ~ .board .tile-3 div,
+input[id*='-4-']:checked ~ .board .tile-4 div,
+input[id*='-5-']:checked ~ .board .tile-5 div,
+input[id*='-6-']:checked ~ .board .tile-6 div,
+input[id*='-7-']:checked ~ .board .tile-7 div,
+input[id*='-8-']:checked ~ .board .tile-8 div {
   display: block;
 }
 
 input[id*='-0-x']:checked ~ .board .tile-0 div::before,
 input[id*='-1-x']:checked ~ .board .tile-1 div::before,
-input[id*='-2-x']:checked ~ .board #tile-2 div::before,
-input[id*='-3-x']:checked ~ .board #tile-3 div::before,
-input[id*='-4-x']:checked ~ .board #tile-4 div::before,
-input[id*='-5-x']:checked ~ .board #tile-5 div::before,
-input[id*='-6-x']:checked ~ .board #tile-6 div::before,
-input[id*='-7-x']:checked ~ .board #tile-7 div::before,
-input[id*='-8-x']:checked ~ .board #tile-8 div::before {
+input[id*='-2-x']:checked ~ .board .tile-2 div::before,
+input[id*='-3-x']:checked ~ .board .tile-3 div::before,
+input[id*='-4-x']:checked ~ .board .tile-4 div::before,
+input[id*='-5-x']:checked ~ .board .tile-5 div::before,
+input[id*='-6-x']:checked ~ .board .tile-6 div::before,
+input[id*='-7-x']:checked ~ .board .tile-7 div::before,
+input[id*='-8-x']:checked ~ .board .tile-8 div::before {
   content: 'X';
   background: #004974;
   color: #89dcf6;
@@ -1009,13 +1009,13 @@ input[id*='-8-x']:checked ~ .board #tile-8 div::before {
 
 input[id*='-0-o']:checked ~ .board .tile-0 div::before,
 input[id*='-1-o']:checked ~ .board .tile-1 div::before,
-input[id*='-2-o']:checked ~ .board #tile-2 div::before,
-input[id*='-3-o']:checked ~ .board #tile-3 div::before,
-input[id*='-4-o']:checked ~ .board #tile-4 div::before,
-input[id*='-5-o']:checked ~ .board #tile-5 div::before,
-input[id*='-6-o']:checked ~ .board #tile-6 div::before,
-input[id*='-7-o']:checked ~ .board #tile-7 div::before,
-input[id*='-8-o']:checked ~ .board #tile-8 div::before {
+input[id*='-2-o']:checked ~ .board .tile-2 div::before,
+input[id*='-3-o']:checked ~ .board .tile-3 div::before,
+input[id*='-4-o']:checked ~ .board .tile-4 div::before,
+input[id*='-5-o']:checked ~ .board .tile-5 div::before,
+input[id*='-6-o']:checked ~ .board .tile-6 div::before,
+input[id*='-7-o']:checked ~ .board .tile-7 div::before,
+input[id*='-8-o']:checked ~ .board .tile-8 div::before {
   content: 'O';
   background: #a60011;
   color: #ffc7b5;
@@ -1062,44 +1062,44 @@ input[id*='-8-o']:checked ~ .board #tile-8 div::before {
   grid-column: 2;
   grid-row: 1;
 }
-#tile-2 {
+.tile-2 {
   grid-column: 3;
   grid-row: 1;
 }
-#tile-2 label,
-#tile-2 div {
+.tile-2 label,
+.tile-2 div {
   border-radius: 0 10% 0 0;
 }
-#tile-3 {
+.tile-3 {
   grid-column: 1;
   grid-row: 2;
 }
-#tile-4 {
+.tile-4 {
   grid-column: 2;
   grid-row: 2;
 }
-#tile-5 {
+.tile-5 {
   grid-column: 3;
   grid-row: 2;
 }
-#tile-6 {
+.tile-6 {
   grid-column: 1;
   grid-row: 3;
 }
-#tile-6 label,
-#tile-6 div {
+.tile-6 label,
+.tile-6 div {
   border-radius: 0 0 0 10%;
 }
-#tile-7 {
+.tile-7 {
   grid-column: 2;
   grid-row: 3;
 }
-#tile-8 {
+.tile-8 {
   grid-column: 3;
   grid-row: 3;
 }
-#tile-8 label,
-#tile-8 div {
+.tile-8 label,
+.tile-8 div {
   border-radius: 0 0 10% 0;
 }
 
