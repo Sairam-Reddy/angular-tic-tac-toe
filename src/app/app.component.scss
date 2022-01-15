@@ -1,18 +1,16 @@
-
-
 input[type='radio'],
 input[type='checkbox'] {
   position: absolute;
   top: -9999em;
 }
 
-#menu {
+.menu {
   display: block;
   background: rgba(0, 0, 0, 0.8);
   text-align: center;
 }
 
-#menu > div {
+.menu > div {
   background: #fff;
   padding: 1rem 2rem;
   border-radius: 10px;
@@ -74,13 +72,13 @@ input[type='checkbox'] {
   background: #333;
 }
 
-#start:checked ~ form #menu {
+.start:checked ~ form .menu {
   display: none;
 }
 
-#difficulty:checked ~ form #menu label[for='difficulty']::before,
-#sound:checked ~ form #menu label[for='sound']::before,
-#first:checked ~ form #menu label[for='first']::before {
+.difficulty:checked ~ form .menu label[for='difficulty']::before,
+.sound:checked ~ form .menu label[for='sound']::before,
+.first:checked ~ form .menu label[for='first']::before {
   left: 1.75rem;
   background: #a60011;
 }
@@ -343,140 +341,140 @@ body {
   animation-delay: -0.1s;
 }
 
-#difficulty:checked
+.difficulty:checked
   ~ form
   #cell-0-x:checked
   ~ #cell-4-o:checked
   ~ #cell-8-x:checked
   ~ #label-computer
   label[for='cell-1-o'],
-#difficulty:checked
+.difficulty:checked
   ~ form
   #cell-0-x:checked
   ~ #cell-4-o:checked
   ~ #cell-8-x:checked
   ~ #label-computer
   label[for='cell-3-o'],
-#difficulty:checked
+.difficulty:checked
   ~ form
   #cell-0-x:checked
   ~ #cell-4-o:checked
   ~ #cell-8-x:checked
   ~ #label-computer
   label[for='cell-5-o'],
-#difficulty:checked
+.difficulty:checked
   ~ form
   #cell-0-x:checked
   ~ #cell-4-o:checked
   ~ #cell-8-x:checked
   ~ #label-computer
   label[for='cell-7-o'],
-#difficulty:checked
+.difficulty:checked
   ~ form
   #cell-2-x:checked
   ~ #cell-4-o:checked
   ~ #cell-6-x:checked
   ~ #label-computer
   label[for='cell-1-o'],
-#difficulty:checked
+.difficulty:checked
   ~ form
   #cell-2-x:checked
   ~ #cell-4-o:checked
   ~ #cell-6-x:checked
   ~ #label-computer
   label[for='cell-3-o'],
-#difficulty:checked
+.difficulty:checked
   ~ form
   #cell-2-x:checked
   ~ #cell-4-o:checked
   ~ #cell-6-x:checked
   ~ #label-computer
   label[for='cell-5-o'],
-#difficulty:checked
+.difficulty:checked
   ~ form
   #cell-2-x:checked
   ~ #cell-4-o:checked
   ~ #cell-6-x:checked
   ~ #label-computer
   label[for='cell-7-o'],
-#difficulty:checked
+.difficulty:checked
   ~ form
   #cell-1-x:checked
   ~ #cell-3-x:checked
   ~ #cell-4-o:checked
   ~ #label-computer
   label[for='cell-0-o'],
-#difficulty:checked
+.difficulty:checked
   ~ form
   #cell-1-x:checked
   ~ #cell-3-x:checked
   ~ #cell-4-o:checked
   ~ #label-computer
   label[for='cell-2-o'],
-#difficulty:checked
+.difficulty:checked
   ~ form
   #cell-1-x:checked
   ~ #cell-3-x:checked
   ~ #cell-4-o:checked
   ~ #label-computer
   label[for='cell-6-o'],
-#difficulty:checked
+.difficulty:checked
   ~ form
   #cell-1-x:checked
   ~ #cell-4-o:checked
   ~ #cell-5-x:checked
   ~ #label-computer
   label[for='cell-0-o'],
-#difficulty:checked
+.difficulty:checked
   ~ form
   #cell-1-x:checked
   ~ #cell-4-o:checked
   ~ #cell-5-x:checked
   ~ #label-computer
   label[for='cell-2-o'],
-#difficulty:checked
+.difficulty:checked
   ~ form
   #cell-1-x:checked
   ~ #cell-4-o:checked
   ~ #cell-5-x:checked
   ~ #label-computer
   label[for='cell-8-o'],
-#difficulty:checked
+.difficulty:checked
   ~ form
   #cell-3-x:checked
   ~ #cell-4-o:checked
   ~ #cell-7-x:checked
   ~ #label-computer
   label[for='cell-0-o'],
-#difficulty:checked
+.difficulty:checked
   ~ form
   #cell-3-x:checked
   ~ #cell-4-o:checked
   ~ #cell-7-x:checked
   ~ #label-computer
   label[for='cell-6-o'],
-#difficulty:checked
+.difficulty:checked
   ~ form
   #cell-3-x:checked
   ~ #cell-4-o:checked
   ~ #cell-7-x:checked
   ~ #label-computer
   label[for='cell-8-o'],
-#difficulty:checked
+.difficulty:checked
   ~ form
   #cell-4-o:checked
   ~ #cell-5-x:checked
   ~ #cell-7-x:checked
   ~ #label-computer
   label[for='cell-2-o'],
-#difficulty:checked
+.difficulty:checked
   ~ form
   #cell-4-o:checked
   ~ #cell-5-x:checked
   ~ #cell-7-x:checked
   ~ #label-computer
   label[for='cell-6-o'],
-#difficulty:checked
+.difficulty:checked
   ~ form
   #cell-4-o:checked
   ~ #cell-5-x:checked
@@ -834,16 +832,16 @@ input:checked
   z-index: -1;
 }
 
-#first:checked ~ form #label-computer,
-#first:checked ~ form input:checked ~ input:checked ~ #label-computer,
-#first:checked
+.first:checked ~ form #label-computer,
+.first:checked ~ form input:checked ~ input:checked ~ #label-computer,
+.first:checked
   ~ form
   input:checked
   ~ input:checked
   ~ input:checked
   ~ input:checked
   ~ #label-computer,
-#first:checked
+.first:checked
   ~ form
   input:checked
   ~ input:checked
@@ -852,7 +850,7 @@ input:checked
   ~ input:checked
   ~ input:checked
   ~ #label-computer,
-#first:checked
+.first:checked
   ~ form
   input:checked
   ~ input:checked
@@ -866,14 +864,14 @@ input:checked
   display: block;
 }
 
-#first:checked ~ form input:checked ~ #label-computer,
-#first:checked
+.first:checked ~ form input:checked ~ #label-computer,
+.first:checked
   ~ form
   input:checked
   ~ input:checked
   ~ input:checked
   ~ #label-computer,
-#first:checked
+.first:checked
   ~ form
   input:checked
   ~ input:checked
@@ -881,7 +879,7 @@ input:checked
   ~ input:checked
   ~ input:checked
   ~ #label-computer,
-#first:checked
+.first:checked
   ~ form
   input:checked
   ~ input:checked
@@ -894,9 +892,9 @@ input:checked
   display: none;
 }
 
-#first:checked ~ form label[for$='-x'],
-#first:checked ~ form input:checked ~ input:checked ~ #board label[for$='-x'],
-#first:checked
+.first:checked ~ form label[for$='-x'],
+.first:checked ~ form input:checked ~ input:checked ~ #board label[for$='-x'],
+.first:checked
   ~ form
   input:checked
   ~ input:checked
@@ -904,7 +902,7 @@ input:checked
   ~ input:checked
   ~ #board
   label[for$='-x'],
-#first:checked
+.first:checked
   ~ form
   input:checked
   ~ input:checked
@@ -914,7 +912,7 @@ input:checked
   ~ input:checked
   ~ #board
   label[for$='-x'],
-#first:checked
+.first:checked
   ~ form
   input:checked
   ~ input:checked
@@ -929,15 +927,15 @@ input:checked
   z-index: -1;
 }
 
-#first:checked ~ form input:checked ~ #board label[for$='-x'],
-#first:checked
+.first:checked ~ form input:checked ~ #board label[for$='-x'],
+.first:checked
   ~ form
   input:checked
   ~ input:checked
   ~ input:checked
   ~ #board
   label[for$='-x'],
-#first:checked
+.first:checked
   ~ form
   input:checked
   ~ input:checked
@@ -946,7 +944,7 @@ input:checked
   ~ input:checked
   ~ #board
   label[for$='-x'],
-#first:checked
+.first:checked
   ~ form
   input:checked
   ~ input:checked
