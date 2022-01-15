@@ -1,12 +1,12 @@
-<input type="checkbox" class="difficulty" checked />
-<input type="checkbox" class="sound" />
-<input type="checkbox" class="first" />
+<input type="checkbox" id="difficulty" checked />
+<input type="checkbox" id="sound" />
+<input type="checkbox" id="first" />
 
-<input type="checkbox" class="start" />
+<input type="checkbox" id="start" />
 
 <form id="tictactoe">
-  <input type="radio" name="cell-0" class="cell-0-x" />
-  <input type="radio" name="cell-0" class="cell-0-o" />
+  <input type="radio" name="cell-0" id="cell-0-x" />
+  <input type="radio" name="cell-0" id="cell-0-o" />
   <input type="radio" name="cell-1" id="cell-1-x" />
   <input type="radio" name="cell-1" id="cell-1-o" />
   <input type="radio" name="cell-2" id="cell-2-x" />
@@ -24,7 +24,7 @@
   <input type="radio" name="cell-8" id="cell-8-x" />
   <input type="radio" name="cell-8" id="cell-8-o" />
 
-  <div class="menu scrim">
+  <div id="menu" class="scrim">
     <div class="center">
       <h1>CSS Tic-Tac-Toe</h1>
       <div>
@@ -53,45 +53,45 @@
     </div>
   </div>
 
-  <div class="board center">
-    <div class="tile tile-0">
+  <div id="board" class="center">
+    <div class="tile" id="tile-0">
       <label for="cell-0-x"></label>
       <div></div>
     </div>
-    <div class="tile tile-1">
+    <div class="tile" id="tile-1">
       <label for="cell-1-x"></label>
       <div></div>
     </div>
-    <div class="tile tile-2">
+    <div class="tile" id="tile-2">
       <label for="cell-2-x"></label>
       <div></div>
     </div>
-    <div class="tile tile-3">
+    <div class="tile" id="tile-3">
       <label for="cell-3-x"></label>
       <div></div>
     </div>
-    <div class="tile tile-4">
+    <div class="tile" id="tile-4">
       <label for="cell-4-x"></label>
       <div></div>
     </div>
-    <div class="tile tile-5">
+    <div class="tile" id="tile-5">
       <label for="cell-5-x"></label>
       <div></div>
     </div>
-    <div class="tile tile-6">
+    <div class="tile" id="tile-6">
       <label for="cell-6-x"></label>
       <div></div>
     </div>
-    <div class="tile tile-7">
+    <div class="tile" id="tile-7">
       <label for="cell-7-x"></label>
       <div></div>
     </div>
-    <div class="tile tile-8">
+    <div class="tile" id="tile-8">
       <label for="cell-8-x"></label>
       <div></div>
     </div>
   </div>
-  <div class="label-computer btn">
+  <div id="label-computer" class="btn">
     Computer Move!
     <label for="cell-0-o"></label>
     <label for="cell-1-o"></label>
@@ -103,8 +103,8 @@
     <label for="cell-7-o"></label>
     <label for="cell-8-o"></label>
   </div>
-  <div class="scrim end">
-    <div class="message center">
+  <div id="end" class="scrim">
+    <div id="message" class="center">
       <div>
         <input type="reset" for="tictactoe" value="Play again" />
       </div>
