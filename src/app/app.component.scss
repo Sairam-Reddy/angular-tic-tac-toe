@@ -4,6 +4,17 @@ input[type='checkbox'] {
   top: -9999em;
 }
 
+.scrim {
+  background: rgba(255, 255, 255, 0.85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  z-index: 9;
+}
+
 .menu {
   display: block;
   background: rgba(0, 0, 0, 0.8);
@@ -1090,17 +1101,6 @@ input[id*='-8-o']:checked ~ .board #tile-8 div::before {
 #tile-8 label,
 #tile-8 div {
   border-radius: 0 0 10% 0;
-}
-
-.scrim {
-  background: rgba(255, 255, 255, 0.85);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: none;
-  z-index: 9;
 }
 
 .message {
