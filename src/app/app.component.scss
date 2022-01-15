@@ -110,7 +110,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-#board {
+.board {
   width: 50vmin;
   height: 50vmin;
   display: grid;
@@ -783,12 +783,12 @@ input:checked
 }
 
 label[for$='-x'],
-input:checked ~ input:checked ~ #board label[for$='-x'],
+input:checked ~ input:checked ~ .board label[for$='-x'],
 input:checked
   ~ input:checked
   ~ input:checked
   ~ input:checked
-  ~ #board
+  ~ .board
   label[for$='-x'],
 input:checked
   ~ input:checked
@@ -796,7 +796,7 @@ input:checked
   ~ input:checked
   ~ input:checked
   ~ input:checked
-  ~ #board
+  ~ .board
   label[for$='-x'],
 input:checked
   ~ input:checked
@@ -806,19 +806,19 @@ input:checked
   ~ input:checked
   ~ input:checked
   ~ input:checked
-  ~ #board
+  ~ .board
   label[for$='-x'] {
   z-index: 1;
 }
 
-input:checked ~ #board label[for$='-x'],
-input:checked ~ input:checked ~ input:checked ~ #board label[for$='-x'],
+input:checked ~ .board label[for$='-x'],
+input:checked ~ input:checked ~ input:checked ~ .board label[for$='-x'],
 input:checked
   ~ input:checked
   ~ input:checked
   ~ input:checked
   ~ input:checked
-  ~ #board
+  ~ .board
   label[for$='-x'],
 input:checked
   ~ input:checked
@@ -827,7 +827,7 @@ input:checked
   ~ input:checked
   ~ input:checked
   ~ input:checked
-  ~ #board
+  ~ .board
   label[for$='-x'] {
   z-index: -1;
 }
@@ -893,14 +893,14 @@ input:checked
 }
 
 .first:checked ~ form label[for$='-x'],
-.first:checked ~ form input:checked ~ input:checked ~ #board label[for$='-x'],
+.first:checked ~ form input:checked ~ input:checked ~ .board label[for$='-x'],
 .first:checked
   ~ form
   input:checked
   ~ input:checked
   ~ input:checked
   ~ input:checked
-  ~ #board
+  ~ .board
   label[for$='-x'],
 .first:checked
   ~ form
@@ -910,7 +910,7 @@ input:checked
   ~ input:checked
   ~ input:checked
   ~ input:checked
-  ~ #board
+  ~ .board
   label[for$='-x'],
 .first:checked
   ~ form
@@ -922,18 +922,18 @@ input:checked
   ~ input:checked
   ~ input:checked
   ~ input:checked
-  ~ #board
+  ~ .board
   label[for$='-x'] {
   z-index: -1;
 }
 
-.first:checked ~ form input:checked ~ #board label[for$='-x'],
+.first:checked ~ form input:checked ~ .board label[for$='-x'],
 .first:checked
   ~ form
   input:checked
   ~ input:checked
   ~ input:checked
-  ~ #board
+  ~ .board
   label[for$='-x'],
 .first:checked
   ~ form
@@ -942,7 +942,7 @@ input:checked
   ~ input:checked
   ~ input:checked
   ~ input:checked
-  ~ #board
+  ~ .board
   label[for$='-x'],
 .first:checked
   ~ form
@@ -953,7 +953,7 @@ input:checked
   ~ input:checked
   ~ input:checked
   ~ input:checked
-  ~ #board
+  ~ .board
   label[for$='-x'] {
   z-index: 1;
 }
@@ -970,41 +970,41 @@ input[id*='-8-']:checked ~ div label[for*='-8-'] {
   display: none !important;
 }
 
-input[id*='-0-']:checked ~ #board #tile-0 div,
-input[id*='-1-']:checked ~ #board #tile-1 div,
-input[id*='-2-']:checked ~ #board #tile-2 div,
-input[id*='-3-']:checked ~ #board #tile-3 div,
-input[id*='-4-']:checked ~ #board #tile-4 div,
-input[id*='-5-']:checked ~ #board #tile-5 div,
-input[id*='-6-']:checked ~ #board #tile-6 div,
-input[id*='-7-']:checked ~ #board #tile-7 div,
-input[id*='-8-']:checked ~ #board #tile-8 div {
+input[id*='-0-']:checked ~ .board #tile-0 div,
+input[id*='-1-']:checked ~ .board #tile-1 div,
+input[id*='-2-']:checked ~ .board #tile-2 div,
+input[id*='-3-']:checked ~ .board #tile-3 div,
+input[id*='-4-']:checked ~ .board #tile-4 div,
+input[id*='-5-']:checked ~ .board #tile-5 div,
+input[id*='-6-']:checked ~ .board #tile-6 div,
+input[id*='-7-']:checked ~ .board #tile-7 div,
+input[id*='-8-']:checked ~ .board #tile-8 div {
   display: block;
 }
 
-input[id*='-0-x']:checked ~ #board #tile-0 div::before,
-input[id*='-1-x']:checked ~ #board #tile-1 div::before,
-input[id*='-2-x']:checked ~ #board #tile-2 div::before,
-input[id*='-3-x']:checked ~ #board #tile-3 div::before,
-input[id*='-4-x']:checked ~ #board #tile-4 div::before,
-input[id*='-5-x']:checked ~ #board #tile-5 div::before,
-input[id*='-6-x']:checked ~ #board #tile-6 div::before,
-input[id*='-7-x']:checked ~ #board #tile-7 div::before,
-input[id*='-8-x']:checked ~ #board #tile-8 div::before {
+input[id*='-0-x']:checked ~ .board #tile-0 div::before,
+input[id*='-1-x']:checked ~ .board #tile-1 div::before,
+input[id*='-2-x']:checked ~ .board #tile-2 div::before,
+input[id*='-3-x']:checked ~ .board #tile-3 div::before,
+input[id*='-4-x']:checked ~ .board #tile-4 div::before,
+input[id*='-5-x']:checked ~ .board #tile-5 div::before,
+input[id*='-6-x']:checked ~ .board #tile-6 div::before,
+input[id*='-7-x']:checked ~ .board #tile-7 div::before,
+input[id*='-8-x']:checked ~ .board #tile-8 div::before {
   content: 'X';
   background: #004974;
   color: #89dcf6;
 }
 
-input[id*='-0-o']:checked ~ #board #tile-0 div::before,
-input[id*='-1-o']:checked ~ #board #tile-1 div::before,
-input[id*='-2-o']:checked ~ #board #tile-2 div::before,
-input[id*='-3-o']:checked ~ #board #tile-3 div::before,
-input[id*='-4-o']:checked ~ #board #tile-4 div::before,
-input[id*='-5-o']:checked ~ #board #tile-5 div::before,
-input[id*='-6-o']:checked ~ #board #tile-6 div::before,
-input[id*='-7-o']:checked ~ #board #tile-7 div::before,
-input[id*='-8-o']:checked ~ #board #tile-8 div::before {
+input[id*='-0-o']:checked ~ .board #tile-0 div::before,
+input[id*='-1-o']:checked ~ .board #tile-1 div::before,
+input[id*='-2-o']:checked ~ .board #tile-2 div::before,
+input[id*='-3-o']:checked ~ .board #tile-3 div::before,
+input[id*='-4-o']:checked ~ .board #tile-4 div::before,
+input[id*='-5-o']:checked ~ .board #tile-5 div::before,
+input[id*='-6-o']:checked ~ .board #tile-6 div::before,
+input[id*='-7-o']:checked ~ .board #tile-7 div::before,
+input[id*='-8-o']:checked ~ .board #tile-8 div::before {
   content: 'O';
   background: #a60011;
   color: #ffc7b5;
