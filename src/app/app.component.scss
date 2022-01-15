@@ -19,25 +19,22 @@ input[type='checkbox'] {
   display: block;
   background: rgba(0, 0, 0, 0.8);
   text-align: center;
-}
-
-.menu > div {
-  background: #fff;
-  padding: 1rem 2rem;
-  border-radius: 10px;
+  > div {
+    background: #fff;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+  }
 }
 
 .toggle-group {
   display: flex;
-}
-
-.toggle-group span {
-  flex: 1;
-  text-align: left;
-}
-
-.toggle-group span:nth-of-type(1) {
-  text-align: right;
+  span {
+    flex: 1;
+    text-align: left;
+    &:nth-of-type(1) {
+      text-align: right;
+    }
+  }
 }
 
 .toggle {
@@ -50,20 +47,20 @@ input[type='checkbox'] {
   border-radius: 1rem;
   position: relative;
   cursor: pointer;
-}
 
-.toggle::before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 1rem;
-  height: 1rem;
-  top: 0.25rem;
-  left: 0.25rem;
-  background: #000;
-  background: #004974;
-  border-radius: 100%;
-  transition: left 0.25s, background-color 0.25s;
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    top: 0.25rem;
+    left: 0.25rem;
+    background: #000;
+    background: #004974;
+    border-radius: 100%;
+    transition: left 0.25s, background-color 0.25s;
+  }
 }
 
 .btn {
@@ -77,10 +74,10 @@ input[type='checkbox'] {
   box-sizing: border-box;
   cursor: pointer;
   transition: background-color 0.25s;
-}
 
-.btn:hover {
-  background: #333;
+  &:hover {
+    background: #333;
+  }
 }
 
 .start:checked ~ form .menu {
